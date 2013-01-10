@@ -1,2 +1,4 @@
 notebook
 ========
+
+- [ ] Create folder structure
