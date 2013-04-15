@@ -1,0 +1,10 @@
+http://localhost:9200/_all//_search
+
+    {
+        "from" : 0, "size" : 100,
+        "query" : {
+        "query_string" : { 
+          "query" :"your query string with \"escaped double\" quote"
+        }
+      }
+    }
