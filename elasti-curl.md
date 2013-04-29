@@ -17,11 +17,10 @@ Page + Sort query
     {
         "from" : 0, "size" : 10,
         "sort" : [
-          { "post_date" : {"order" : "asc"} },
-          "user",
-          { "name" : "desc" },
-          { "age" : "desc" },
-          "_score"
+          { "EurobaseExecutionDay" : {"order" : "asc"} },
+          { "OutputBranch" : {"order" : "asc"} },
+          { "@timestamp" : {"order" : "asc"} },
+          { "sequence" : {"order" : "asc"} }             
         ],
         "query" : {
         "query_string" : { 
