@@ -1,6 +1,6 @@
 Endpoint
 
-    http://localhost:9200/_all//_search
+    http://localhost:9200/_all//_search?pretty
 
 Simplest query string search
 
@@ -17,8 +17,8 @@ Page + Sort query
     {
         "from" : 0, "size" : 10,
         "sort" : [
-          { "EurobaseExecutionDay" : {"order" : "asc"} },
-          { "OutputBranch" : {"order" : "asc"} },
+          { "First" : {"order" : "asc"} },
+          { "Second" : {"order" : "asc"} },
           { "@timestamp" : {"order" : "asc"} },
           { "sequence" : {"order" : "asc"} }             
         ],
